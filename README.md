@@ -15,8 +15,7 @@
 tab 滑动点击效果，文字渐变
 
 
-![image](https://raw.githubusercontent.com/MonkeyS914/SCTabView/tree/master/screenshot/123.gif?2)
-https://github.com/MonkeyS914/SCTabView/tree/master/screenshot
+![image](https://raw.githubusercontent.com/MonkeyS914/SCTabView/master/screenshot/123.gif?2)
 
 ### 安装方法：
 ==============
