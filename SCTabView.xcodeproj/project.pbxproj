@@ -212,6 +212,8 @@
 				TargetAttributes = {
 					A5717EEF1D40B5E700A6FB10 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5TMH7YTD98;
+						DevelopmentTeamName = "城 孙 (Personal Team)";
 					};
 					A5717F081D40B5E700A6FB10 = {
 						CreatedOnToolsVersion = 7.3;
@@ -426,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OVT.SCTabView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -438,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OVT.SCTabView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -506,6 +510,7 @@
 				A5717F1F1D40B5E700A6FB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5717F201D40B5E700A6FB10 /* Build configuration list for PBXNativeTarget "SCTabViewTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +519,7 @@
 				A5717F221D40B5E700A6FB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5717F231D40B5E700A6FB10 /* Build configuration list for PBXNativeTarget "SCTabViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +528,7 @@
 				A5717F251D40B5E700A6FB10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
