@@ -18,15 +18,15 @@
     UIView *indicatorView;
     BOOL isClickAction;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
+    
+    /*
+     // Only override drawRect: if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     - (void)drawRect:(CGRect)rect {
+     // Drawing code
+     }
+     */
+    
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
@@ -34,7 +34,7 @@
     }
     return self;
 }
-
+    
 - (void)setSelectedColor:(UIColor *)selectedColor unSelectedColor:(UIColor *)unSelectedColor{
     [leftLabel setTitleColor:unSelectedColor forState:UIControlStateNormal];
     [rightLabel setTitleColor:unSelectedColor forState:UIControlStateNormal];
@@ -44,14 +44,14 @@
     [rightBtn setTitleColor:selectedColor forState:UIControlStateSelected];
     [rightBtn setTitleColor:selectedColor forState:UIControlStateNormal];
 }
-
+    
 - (void)setLeftTitle:(NSString *)leftTitle rightTitle:(NSString *)rightTitle{
     [leftLabel setTitle:leftTitle forState:UIControlStateNormal];
     [rightLabel setTitle:rightTitle forState:UIControlStateNormal];
     [leftBtn setTitle:leftTitle forState:UIControlStateNormal];
     [rightBtn setTitle:rightTitle forState:UIControlStateNormal];
 }
-
+    
 - (void)addTabView:(CGRect)frame{
     halfWith = frame.size.width/2.0;
     height = frame.size.height;
@@ -104,7 +104,7 @@
     
     [self addSubview:indicatorView];
 }
-
+    
 - (void)setLength:(CGFloat)length{
     if (isClickAction) {
         return;
@@ -118,7 +118,7 @@
     leftLabel.frame = CGRectMake(-length, 0, 60, 30);
     rightLabel.frame = CGRectMake(60-length, 0, 60, 30);
 }
-
+    
 - (void)indicatorBtnClicked:(UIButton *)sender{
     isClickAction = YES;
     if (sender == leftBtn) {
@@ -140,7 +140,7 @@
         }
     }
 }
-
+    
 - (void)moveIndicatorView:(BOOL)toLeft{
     if (toLeft) {
         [UIView animateWithDuration:0.5 animations:^{
@@ -186,6 +186,6 @@
         }];
     }
 }
-
-
-@end
+    
+    
+    @end
