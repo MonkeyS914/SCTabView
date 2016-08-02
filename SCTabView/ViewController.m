@@ -48,18 +48,14 @@
     [self.view addSubview:tabBarView];
 }
 
-#pragma mark UIScorllViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    if (scrollView.contentOffset.x <= self.view.frame.size.width) {
-        return;
-    }
+    //注，如果scrollview上的两个contentview 为tableview或者collectionview则要判断传进来的scrollView是哪一个
+    //不然会影响判断
     if (scrollView.contentOffset.x == 0) {
-        [self clickBtnAtIndex:0];
-        //        [tabBarView moveIndicatorView:YES];
+        [tabBarView moveIndicatorView:YES];
     }
     else if(scrollView.contentOffset.x == self.view.frame.size.width){
-        [self clickBtnAtIndex:1];
-        //        [tabBarView moveIndicatorView:NO];
+        [tabBarView moveIndicatorView:NO];
     }
 }
 
@@ -71,7 +67,7 @@
     else if (index ==1){
         //已下载
         [SCScrollView setContentOffset:CGPointMake(self.view.frame.size.width, 0) animated:YES];
-
+        
     }
 }
 
